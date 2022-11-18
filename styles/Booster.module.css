@@ -1,0 +1,173 @@
+.content-container {
+  padding: 0px;
+  margin-left: 200px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@media only screen and (max-width: 1400px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.CacheText {
+  margin: 2em;
+}
+
+.booster-item {
+  margin: 15px;
+  min-height: 17.5em;
+
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 20px;
+
+  background-color: #f8f8f8;
+  border-color: #d6d6d6;
+}
+
+.heading-container {
+  display: flex;
+  padding: 1em 1.5em;
+  height: 3em;
+  margin: -2px -2px 0;
+
+  border-style: solid;
+  border-width: 2px 2px 0;
+
+  border-radius: 20px 20px 0 0;
+
+  background-color: #40798c;
+  border-color: #40798c;
+
+  align-items: center;
+}
+
+.heading {
+  margin: 0;
+  color: white;
+}
+
+.text-container {
+  padding: 1em 1.5em;
+}
+
+.text-date {
+  padding-left: 1em;
+}
+
+.chart-label {
+  display: block;
+
+  height: calc(3em + 2px * 2);
+  margin: 4% 4% 0px;
+
+  border-style: solid;
+  border-radius: 10px;
+  border-width: 2px;
+  border-color: #d6d6d6;
+
+  background-color: #f8f8f8;
+  cursor: pointer;
+}
+
+.chart-label-text {
+  line-height: 3em;
+  padding-left: 1.5em;
+
+  user-select: none;
+}
+
+.chart-label-container {
+  /* display: flex;
+  flex-direction: column; */
+
+  margin: 0px 4%;
+  min-height: 175px;
+  padding: 1em;
+
+  border-style: solid;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-width: 2px;
+  border-color: #d6d6d6;
+
+  background-color: #dadada;
+  margin-bottom: 50px;
+}
+
+.button-row {
+  margin: 1em 0px;
+}
+
+.button-row > span {
+  margin: 0px 1em;
+  user-select: none;
+}
+
+.button-row > button {
+  margin: 0.5em;
+  padding: 6px 16px;
+  height: 2.25em;
+
+  background-color: #3e64ff;
+
+  font-size: 15px;
+
+  border: none;
+  border-radius: 15px;
+
+  color: white;
+
+  cursor: pointer;
+  user-select: none;
+
+  transition: background-color 0.25s;
+}
+
+.button-row > button:hover {
+  background-color: #224efc;
+}
+
+.button-row > button.disabled {
+  background-color: #c8cddf;
+  border-color: #c8cddf;
+}
+
+.loading-spinner {
+  width: 40px;
+  height: 40px;
+  margin: 0px;
+
+  border-style: solid;
+  border-radius: 50%;
+  border-width: 2px;
+  border-color: white gray gray;
+
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
